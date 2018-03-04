@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.meghshrey.implicitintent.ImplicitIntentActivity">
+
+    <Button
+        android:id="@+id/launch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark"
+        android:onClick="showWebPage"
+        android:text=" Launch"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        tools:textAllCaps="false"
+        tools:textSize="24sp"
+        android:layout_below="@+id/url_text"
+        android:layout_alignStart="@+id/url_text"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="22dp"
+        android:layout_alignEnd="@+id/ring_btn" />
+
+    <Button
+        android:id="@+id/ring_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:background="@android:color/background_dark"
+        android:onClick="showWebPage"
+        android:text="Ring"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        tools:textAllCaps="false"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_above="@+id/btn_closeaapp"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/number_text"
+        android:layout_alignStart="@+id/number_text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Implicit Intents"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/url_text"
+        android:layout_alignEnd="@+id/url_text" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="45dp"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:text="URL:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/url_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textUri" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/number_text"
+        android:layout_alignStart="@+id/textView2"
+        android:text="Phone:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        tools:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ring_btn"
+        android:layout_alignLeft="@+id/url_text"
+        android:layout_alignStart="@+id/url_text"
+        android:layout_marginBottom="13dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btn_closeaapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:background="@android:color/background_dark"
+        android:onClick="onClickButtonCloseApp"
+        android:text="Close App"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        tools:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ring_btn"
+        android:layout_alignEnd="@+id/ring_btn"
+        android:layout_alignLeft="@+id/ring_btn"
+        android:layout_alignStart="@+id/ring_btn" />
+
+</RelativeLayout>
